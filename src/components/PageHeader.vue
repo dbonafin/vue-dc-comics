@@ -99,7 +99,7 @@
     }
 
     .container {
-        height: 150px;
+        height: 140px;
         line-height: 100%;
         display: flex;
         justify-content: space-between;
@@ -107,7 +107,7 @@
         ul {
             display: flex;
             li {
-                line-height: calc(150px - 5px);
+                line-height: calc(140px - 5px);
                 margin: 0 10px;
                 &.active {
                     color: $primary-color;

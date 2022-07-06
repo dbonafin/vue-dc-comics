@@ -61,15 +61,16 @@
     .shop-section {
         background-color: $primary-color;
         color: white;
-        height: 200px;
+        height: 150px;
         ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 200px;
+            height: 150px;
             li {
                 display: flex;
                 align-items: center;
+                cursor: pointer;
                 span {
                     margin: 0 7px;
                 }
