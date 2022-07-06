@@ -26,103 +26,102 @@
 </template>
 
 <script>
-export default {
-    name: "PageHeader", 
-     data() {
-        return {
-            linksArray: [
-                {
-                    url: "#",
-                    text: "CHARACTERS",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "COMICS",
-                    active: true
-                },
-                 {
-                    url: "#",
-                    text: "MOVIES",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "TV",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "GAMES",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "COLLECTIBLES",
-                    active: false
-                }, 
-                 {
-                    url: "#",
-                    text: "VIDEOS",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "FANS",
-                    active: false
-                }, 
-                 {
-                    url: "#",
-                    text: "NEWS",
-                    active: false
-                },
-                {
-                    url: "#",
-                    text: "SHOP",
-                    active: false
-                }, 
+    export default {
+        name: "PageHeader", 
+        data() {
+            return {
+                linksArray: [
+                    {
+                        url: "#",
+                        text: "CHARACTERS",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "COMICS",
+                        active: true
+                    },
+                    {
+                        url: "#",
+                        text: "MOVIES",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "TV",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "GAMES",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "COLLECTIBLES",
+                        active: false
+                    }, 
+                    {
+                        url: "#",
+                        text: "VIDEOS",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "FANS",
+                        active: false
+                    }, 
+                    {
+                        url: "#",
+                        text: "NEWS",
+                        active: false
+                    },
+                    {
+                        url: "#",
+                        text: "SHOP",
+                        active: false
+                    }, 
 
 
-                
-            ]
-        }
-    }
-}
-</script>
-
-<style lang="scss" scoped>
-@import "../style/common.scss";
-@import "../style/brand-colors.scss";
-
-header {
-    background-color: white;
-}
-
-.container {
-    height: 150px;
-    line-height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul {
-        display: flex;
-        li {
-            line-height: calc(150px - 5px);
-            margin: 0 10px;
-            &.active {
-                color: $primary-color;
-                border-bottom: 5px solid $primary-color;
-            } 
-            a {
-                color: $tertiary-color;  
-                font-weight: 700;
-                &.active {
-                color: $primary-color;
-            } 
+                    
+                ]
             }
         }
     }
-}
+</script>
+
+<style lang="scss" scoped>
+    @import "../style/common.scss";
+    @import "../style/brand-colors.scss";
+
+    header {
+        background-color: white;
+    }
+
+    .container {
+        height: 150px;
+        line-height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            display: flex;
+            li {
+                line-height: calc(150px - 5px);
+                margin: 0 10px;
+                &.active {
+                    color: $primary-color;
+                    border-bottom: 5px solid $primary-color;
+                } 
+                a {
+                    color: $tertiary-color;  
+                    font-weight: 700;
+                    &.active {
+                    color: $primary-color;
+                } 
+                }
+            }
+        }
+    }
 
 </style>
