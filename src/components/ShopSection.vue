@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
 
     <div class="shop-section">
         <div class="container">
@@ -39,9 +38,7 @@
             </ul>
         </div>
     </div>
-
- 
-  </div>
+    
 </template>
 
 <script>

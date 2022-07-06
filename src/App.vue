@@ -13,6 +13,10 @@
       <!-- Shop section - merchandising, subscription etc -->
       <ShopSection/>
     </main>
+
+    <footer>
+      <PageFooter/>
+    </footer>
  
   </div>
 </template>
@@ -23,13 +27,16 @@
   import PageHeader from './components/PageHeader.vue';
   import TopSection from './components/TopSection.vue';
   import ShopSection from './components/ShopSection.vue';
+  import PageFooter from './components/PageFooter.vue';
+  
 
   export default {
     name: 'App',
     components: {
       PageHeader,
       TopSection,
-      ShopSection
+      ShopSection,
+      PageFooter
     }
   }
 
