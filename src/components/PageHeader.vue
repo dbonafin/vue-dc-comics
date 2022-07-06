@@ -1,26 +1,27 @@
 <template>
-    <header class="header container">
+    <header>
 
-        <!-- Logo container -->
-        <div>
-            <img src="../assets/img/dc-logo.png" alt="dc comics logo">
-        </div>
+       <div class="container">
+            <!-- Logo container -->
+            <div>
+                <img src="../assets/img/dc-logo.png" alt="dc comics logo">
+            </div>
 
-        <!-- Header navigation area -->
-        <nav>
-            <ul>
-                <!-- Create a link for every object in the linksArray - different urls and texts -->
-                <li 
-                v-for="(link, index) in linksArray" 
-                :key="index" 
-                :class="{'active': link.active}"
-                >
-                    <!-- If the item is active - add class 'active' to apply the css styles (li and a tags) -->
-                    <a :class="{'active': link.active}" :href="link.url"> {{link.text}} </a>
-                </li>
-            </ul>
-        </nav>
-
+            <!-- Header navigation area -->
+            <nav>
+                <ul>
+                    <!-- Create a link for every object in the linksArray - different urls and texts -->
+                    <li 
+                    v-for="(link, index) in linksArray" 
+                    :key="index" 
+                    :class="{'active': link.active}"
+                    >
+                        <!-- If the item is active - add class 'active' to apply the css styles (li and a tags) -->
+                        <a :class="{'active': link.active}" :href="link.url"> {{link.text}} </a>
+                    </li>
+                </ul>
+            </nav>
+       </div>
     </header>
 </template>
 
@@ -94,6 +95,10 @@ export default {
 @import "../style/brand-colors.scss";
 
 header {
+    background-color: white;
+}
+
+.container {
     height: 150px;
     line-height: 100%;
     display: flex;
@@ -103,11 +108,11 @@ header {
     ul {
         display: flex;
         li {
-            line-height: 150px;
+            line-height: calc(150px - 5px);
             margin: 0 10px;
             &.active {
                 color: $primary-color;
-                border-bottom: 3px solid $primary-color;
+                border-bottom: 5px solid $primary-color;
             } 
             a {
                 color: $tertiary-color;  
