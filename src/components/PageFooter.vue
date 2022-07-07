@@ -240,11 +240,10 @@
                     margin-left: 20px;
                     li {
                         margin-left: 10px;
+                        cursor: pointer;
                     }
                 }
-
             }
-         
         }
     }
 

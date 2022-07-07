@@ -7,17 +7,18 @@
     </header>
 
     <main>
-      <!-- Top section of the main area -->
+      <!-- Top section of the main area - Jumbotron -->
       <TopSection/>
 
       <!-- Shop section - merchandising, subscription etc -->
       <ShopSection/>
     </main>
 
+    <!-- Footer content -->
     <footer>
       <PageFooter/>
     </footer>
- 
+
   </div>
 </template>
 

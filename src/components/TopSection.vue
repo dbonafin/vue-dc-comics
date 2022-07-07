@@ -1,13 +1,12 @@
 <template>
+
   <div id="app">
 
-    <div class="top-section">
-        <div class="container">
-            <p> ---------> Here the content of the main top section &lt;--------- </p>
-        </div>
+    <div class="top-section">  
     </div>
  
   </div>
+  
 </template>
 
 <script>
@@ -23,9 +22,9 @@
   .top-section {
     background-color: black;
     color: white;
-    line-height: 100px;
-    // test
-    height: 100px;
+    height: 450px;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-size: cover;
   }
 
 </style>
